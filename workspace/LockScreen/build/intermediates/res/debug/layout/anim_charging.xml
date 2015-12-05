@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/main1"
+        layout="@layout/battery" />
+
+    <FrameLayout
+        android:id="@+id/animation_charging_one"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_x="0dp"
+        android:layout_y="400dp" >
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/chong_ani" />
+    </FrameLayout>
+
+</AbsoluteLayout><!-- From: file:/D:/eclipse/workspace/LockScreen/res/layout/anim_charging.xml -->

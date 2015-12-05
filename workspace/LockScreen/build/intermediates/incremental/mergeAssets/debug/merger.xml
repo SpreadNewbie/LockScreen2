@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="unspecified" >
+        <source path="D:\eclipse\workspace\LockScreen\build\intermediates\exploded-aar\workspace\appcompat_v7\unspecified\assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="D:\eclipse\workspace\LockScreen\assets" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="D:\eclipse\workspace\LockScreen\build-types\debug\assets" />
+    </dataSet>
+
+</merger>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/layout_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                android:id="@+id/phone_point"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/red_point"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/ic_phone_24dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/ic_phone_24dp" />
+
+            <Button
+                android:id="@+id/ic_lock_24dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/ic_lock_24dp" />
+
+            <Button
+                android:id="@+id/ic_msg_24dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/ic_msg_24dp" />
+
+            <Button
+                android:id="@+id/msg_point"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/red_point"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="53dp"
+            android:background="@drawable/battery0" >
+
+            <ImageView
+                android:id="@+id/battery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/battery100" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/time_remain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="时间1"
+            android:textColor="#1be400"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/time_remain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="时间2"
+            android:textColor="#1be400" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_charging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/anim_charging" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_fast_charging"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" >
+
+        <include layout="@layout/battery2" />
+
+        <ImageView
+            android:id="@+id/iv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="467dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/line2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="467dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/cover" />
+
+        <ImageView
+            android:id="@+id/iv_fire"
+            android:layout_width="260dp"
+            android:layout_height="467dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/a24"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_lighting"
+            android:layout_width="match_parent"
+            android:layout_height="467dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/double_lighting"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+    
+    <TextView
+            android:id="@+id/emergency_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="紧急拨号"
+            android:textColor="#ffffff" />
+    
+    <TextView
+            android:id="@+id/time_remain3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="时间3"
+            android:textColor="#1be400"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/time_remain4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="时间4"
+            android:textColor="#1be400"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/remain_battery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="275dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+</FrameLayout>
